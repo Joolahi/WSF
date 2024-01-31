@@ -1,0 +1,35 @@
+
+### Get all
+GET http://localhost:3000/albums
+
+### 
+POST http://localhost:3000/register
+content-type: application/json
+
+{
+  "name": "joonas",
+  "email": "joonas@gmaill.com",
+  "password": "test",
+  "passwordConfirm": "test"
+}
+
+### login
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+  "name": "joonas",
+  "password": "test"
+}
+
+
+### Post
+POST http://localhost:3000/albums
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiam9vbmFzIiwiaWQiOiI2NTc3M2YxMzA2NzRiYThhMDZkNjJhYzgiLCJpYXQiOjE3MDIzMTM3NzcsImV4cCI6MTcwMjQwMDE3N30.bpom-wRUeuuVEVyv9KM6Ysas02P1avJIkAkwklLFhQ8
+
+{
+  "artist" : "Jorma"
+  
+}
+
